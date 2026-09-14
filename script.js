@@ -52,6 +52,12 @@ document.querySelector('.check').addEventListener
   }
 });
 
+document.querySelector('.guess').addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    document.querySelector('.check').click();
+  }
+});
+
 
 //Refresh Button
 document.querySelector('.again').addEventListener('click', function() {
